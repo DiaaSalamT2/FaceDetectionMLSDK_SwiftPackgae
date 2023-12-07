@@ -1,0 +1,11 @@
+framework module FaceDetectionMLSDK {
+  umbrella header "FaceDetectionMLSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module FaceDetectionMLSDK.Swift {
+  header "FaceDetectionMLSDK-Swift.h"
+  requires objc
+}

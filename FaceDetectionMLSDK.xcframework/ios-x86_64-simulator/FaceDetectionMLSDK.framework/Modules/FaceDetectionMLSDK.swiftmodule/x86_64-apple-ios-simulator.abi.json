@@ -1,0 +1,589 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceDetectionProtocol",
+        "printedName": "FaceDetectionProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(didOutput:detectLeftEyeOpen:detectRightEyeOpen:detectSmiling:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSNumber?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FaceDetectionMLSDK@objc(pl)FaceDetectionProtocol(im)captureOutputWithDidOutput:detectLeftEyeOpen:detectRightEyeOpen:detectSmiling:completion:",
+            "mangledName": "$s18FaceDetectionMLSDK0aB8ProtocolP13captureOutput03didF017detectLeftEyeOpen0h5RightjK00H7Smiling10completionySo17CMSampleBufferRefa_S3bySo8NSNumberCSgctF",
+            "moduleName": "FaceDetectionMLSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FaceDetectionMLSDK.FaceDetectionProtocol>",
+            "sugared_genericSig": "<Self where Self : FaceDetectionMLSDK.FaceDetectionProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@FaceDetectionMLSDK@objc(pl)FaceDetectionProtocol",
+        "mangledName": "$s18FaceDetectionMLSDK0aB8ProtocolP",
+        "moduleName": "FaceDetectionMLSDK",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MLImage",
+        "printedName": "MLImage",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MLKit",
+        "printedName": "MLKit",
+        "declKind": "Import",
+        "moduleName": "FaceDetectionMLSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceDetectionManager",
+        "printedName": "FaceDetectionManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(didOutput:detectLeftEyeOpen:detectRightEyeOpen:detectSmiling:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSNumber?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FaceDetectionMLSDK@objc(cs)FaceDetectionManager(im)captureOutputWithDidOutput:detectLeftEyeOpen:detectRightEyeOpen:detectSmiling:completion:",
+            "mangledName": "$s18FaceDetectionMLSDK0aB7ManagerC13captureOutput03didF017detectLeftEyeOpen0h5RightjK00H7Smiling10completionySo17CMSampleBufferRefa_S3bySo8NSNumberCSgctF",
+            "moduleName": "FaceDetectionMLSDK",
+            "objc_name": "captureOutputWithDidOutput:detectLeftEyeOpen:detectRightEyeOpen:detectSmiling:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceDetectionManager",
+                "printedName": "FaceDetectionMLSDK.FaceDetectionManager",
+                "usr": "c:@M@FaceDetectionMLSDK@objc(cs)FaceDetectionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@FaceDetectionMLSDK@objc(cs)FaceDetectionManager(im)init",
+            "mangledName": "$s18FaceDetectionMLSDK0aB7ManagerCACycfc",
+            "moduleName": "FaceDetectionMLSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FaceDetectionMLSDK@objc(cs)FaceDetectionManager",
+        "mangledName": "$s18FaceDetectionMLSDK0aB7ManagerC",
+        "moduleName": "FaceDetectionMLSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FaceDetectionProtocol",
+            "printedName": "FaceDetectionProtocol",
+            "usr": "c:@M@FaceDetectionMLSDK@objc(pl)FaceDetectionProtocol",
+            "mangledName": "$s18FaceDetectionMLSDK0aB8ProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 365,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 398,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 427,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 516,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 547,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 573,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 48,
+      "value": "\"Failed to get image buffer from sample buffer.\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1269,
+      "length": 46,
+      "value": "\"Failed to create MLImage from sample buffer.\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3532,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3565,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3594,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "Array",
+      "offset": 4112,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4412,
+      "length": 14,
+      "value": "\"Self is nil!\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4536,
+      "length": 76,
+      "value": "\"Failed to detect faces with error: \""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4610,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4697,
+      "length": 46,
+      "value": "\"On-Device face detector returned no results.\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4804,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4840,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4871,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5276,
+      "length": 4,
+      "value": "\"NA\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5379,
+      "length": 4,
+      "value": "\"NA\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5482,
+      "length": 4,
+      "value": "\"NA\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5606,
+      "length": 4,
+      "value": "\"NA\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5733,
+      "length": 4,
+      "value": "\"NA\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5845,
+      "length": 4,
+      "value": "\"NA\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5930,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 5937,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6007,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 6014,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6074,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 6081,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6113,
+      "length": 152,
+      "value": "\"Left Eye Open Probability: \""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6166,
+      "length": 5,
+      "value": "\" Right Eye Open Probability: \""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6221,
+      "length": 7,
+      "value": "\" Smiling Probability: \""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6264,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/apple\/Documents\/T2-Repo\/FaceDetectionMLSDK\/FaceDetectionMLSDK\/FaceDetectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6475,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

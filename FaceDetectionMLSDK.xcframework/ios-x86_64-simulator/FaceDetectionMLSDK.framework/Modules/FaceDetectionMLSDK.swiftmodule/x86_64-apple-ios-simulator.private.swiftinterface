@@ -1,0 +1,22 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FaceDetectionMLSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreVideo
+@_exported import FaceDetectionMLSDK
+import Foundation
+import MLImage
+import MLKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol FaceDetectionProtocol : ObjectiveC.NSObjectProtocol {
+  @objc func captureOutput(didOutput sampleBuffer: CoreMedia.CMSampleBuffer, detectLeftEyeOpen: Swift.Bool, detectRightEyeOpen: Swift.Bool, detectSmiling: Swift.Bool, completion: @escaping (Foundation.NSNumber?) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers public class FaceDetectionManager : ObjectiveC.NSObject, FaceDetectionMLSDK.FaceDetectionProtocol {
+  @objc public func captureOutput(didOutput sampleBuffer: CoreMedia.CMSampleBuffer, detectLeftEyeOpen: Swift.Bool = false, detectRightEyeOpen: Swift.Bool = false, detectSmiling: Swift.Bool = false, completion: @escaping (Foundation.NSNumber?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
